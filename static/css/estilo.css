@@ -1,4 +1,4 @@
-/* Fondo y centrado general */
+/* Fondo general */
 body.centered {
     display: flex;
     justify-content: center;
@@ -9,7 +9,7 @@ body.centered {
     font-family: Arial, sans-serif;
 }
 
-/* Estilo para tarjetas de formulario */
+/* Estilo para formulario */
 form {
     background-color: white;
     padding: 30px 40px;
@@ -68,12 +68,12 @@ button:hover {
 /* Resultado del formulario */
 p {
     margin-top: 15px;
-    font-weight: bold;
+    font-weight: Medium;
        text-align: left;
 }
 
 
-/* Estilo para el index (botones coloridos) */
+/* Estilo para el index*/
 a.boton {
     display: inline-block;
     width: 150px;
