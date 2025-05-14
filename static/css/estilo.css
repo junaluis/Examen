@@ -1,0 +1,102 @@
+/* Fondo y centrado general */
+body.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f3f3;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para tarjetas de formulario */
+form {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Etiquetas centradas y suaves */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: left;
+}
+
+/* Campos de texto */
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Botones */
+input[type="submit"],
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Resultado del formulario */
+p {
+    margin-top: 15px;
+    font-weight: bold;
+       text-align: left;
+}
+
+
+/* Estilo para el index (botones coloridos) */
+a.boton {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+a.boton:first-of-type {
+    background-color: purple;
+}
+
+a.boton:last-of-type {
+    background-color: limegreen;
+}
+
+a.boton:hover {
+    transform: scale(1.05);
+}

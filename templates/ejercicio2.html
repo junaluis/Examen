@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}">
+
+</head>
+<body class="centered">
+<div class="form-container">
+
+    <h2>Inicio de sesión</h2>
+    <form method="POST">
+        <label for="usuario">Ingresa tu nombre</label>
+        <input type="text" id="usuario" name="usuario" required><br><br>
+
+        <label for="contraseña">Ingresa tu contraseña</label>
+        <input type="password" id="contraseña" name="contraseña" required><br><br>
+
+        <button type="submit">Verificar</button>
+
+
+     {% if mensaje %}
+        <p style="color: {% if 'incorrectos' in mensaje %}red{% else %}green{% endif %};">
+            {{ mensaje }}
+        </p>
+    {% endif %}
+
+<a href="/" style="display:block; margin-top:20px;">Volver al inicio</a>
+</form>
+
+</body>
+</html>
